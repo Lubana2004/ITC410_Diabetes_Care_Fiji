@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FB"
+    android:fillViewport="true"
+    android:clipToPadding="false"
+    android:scrollbars="vertical"
+    tools:context=".Education">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="28dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1565C0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/ivHeaderIcon"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_icon_teal"
+                android:gravity="center"
+                android:text="📚"
+                android:textSize="23sp"
+                android:contentDescription="Health education icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DIABETES AWARENESS"
+                    android:textColor="#BBDEFB"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Diabetes Education"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Understand. Prevent. Manage."
+                    android:textColor="#E3F2FD"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_icon_circle"
+                android:src="@drawable/ic_arrow_back"
+                android:scaleType="centerInside"
+                android:padding="10dp"
+                android:contentDescription="Go back"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="#2457A7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </LinearLayout>
+
+        <!-- Introduction -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:contentDescription="Diabetes education illustration"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/d1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Knowledge is the first step to better health."
+                android:textColor="#17365D"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Learn about diabetes, recognise its warning signs, understand your risk factors, and discover practical ways to support your health."
+                android:textColor="#536579"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- What is diabetes? -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01  |  What Is Diabetes?"
+                android:textColor="#1565C0"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Diabetes is a chronic condition that affects how the body regulates blood sugar (glucose). It occurs when the body does not produce enough insulin or cannot use insulin effectively."
+                android:textColor="#37474F"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Insulin is a hormone produced by the pancreas that helps glucose enter cells for energy. Persistently high blood sugar can damage organs and tissues over time."
+                android:textColor="#37474F"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- Symptoms -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02  |  Symptoms of Diabetes"
+                android:textColor="#1565C0"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="• Increased thirst&#10;• Frequent urination&#10;• Feeling unusually tired&#10;• Unexplained weight loss&#10;• Blurred vision&#10;• Slow-healing wounds&#10;• Tingling or numbness in the hands or feet&#10;• Dry or itchy skin&#10;• Frequent infections"
+                android:textColor="#37474F"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="#FFF3E0"
+                android:padding="12dp"
+                android:text="Important: Some people, particularly those with type 2 diabetes, may have few or no noticeable symptoms in the early stages."
+                android:textColor="#8D4B00"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp" />
+
+        </LinearLayout>
+
+        <!-- Causes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="03  |  Causes &amp; Risk Factors"
+                android:textColor="#1565C0"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Types and causes"
+                android:textColor="#17365D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="5dp"
+                android:text="• Type 1 diabetes: The immune system attacks the cells that produce insulin.&#10;&#10;• Type 2 diabetes: The body becomes resistant to insulin and may gradually produce less insulin.&#10;&#10;• Gestational diabetes: Hormonal changes during pregnancy can make it harder for the body to use insulin.&#10;&#10;• Other contributing factors: Family history, genetic factors, certain medical conditions, and some medications."
+                android:textColor="#37474F"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Common risk factors"
+                android:textColor="#17365D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="5dp"
+                android:text="• Family history of diabetes&#10;• Overweight or obesity&#10;• Physical inactivity&#10;• Unhealthy eating habits&#10;• High blood pressure&#10;• High cholesterol&#10;• Increasing age&#10;• Previous gestational diabetes&#10;• History of prediabetes&#10;• Certain genetic or ethnic backgrounds"
+                android:textColor="#37474F"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="#E3F2FD"
+                android:padding="12dp"
+                android:text="Having risk factors does not mean that a person will definitely develop diabetes."
+                android:textColor="#174A7E"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Complications of Diabetes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="04  |  Complications of Diabetes"
+                android:textColor="#1565C0"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Diabetes should not be ignored. When blood sugar stays too high over time, it can damage blood vessels, nerves, and important organs. Without proper treatment and regular check-ups, serious health problems may develop."
+                android:textColor="#37474F"
+                android:textSize="15sp" />
+
+            <!-- Heart and blood vessels -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="1. Heart Disease and Stroke"
+                android:textColor="#17365D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="4dp"
+                android:text="High blood sugar can damage blood vessels and increase the risk of heart attacks, stroke, and poor circulation."
+                android:textColor="#536579"
+                android:textSize="15sp" />
+
+            <!-- Kidney damage -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="2. Kidney Damage"
+                android:textColor="#17365D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Diabetes can damage the kidneys over time, making it harder for them to remove waste from the blood. Severe damage may lead to kidney failure or dialysis."
+                android:textColor="#536579"
+                android:textSize="15sp" />
+
+            <!-- Eye problems -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="3. Eye Problems and Vision Loss"
+                android:textColor="#17365D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Damage to the blood vessels in the eyes can cause blurred vision, diabetic eye disease, and even permanent vision loss if not detected and treated."
+                android:textColor="#536579"
+                android:textSize="15sp" />
+
+            <!-- Nerve damage -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="4. Nerve Damage and Foot Problems"
+                android:textColor="#17365D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Nerve damage may cause tingling, numbness, burning pain, or loss of feeling in the feet. Small cuts or sores may go unnoticed, become infected, and develop into serious wounds. In severe cases, amputation may be necessary."
+                android:textColor="#536579"
+                android:textSize="15sp" />
+
+            <!-- Infections and slow healing -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="5. Slow-Healing Wounds and Infections"
+                android:textColor="#17365D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="4dp"
+                android:text="High blood sugar can interfere with healing and increase the risk of some infections. Untreated foot wounds can become serious and may require hospital treatment."
+                android:textColor="#536579"
+                android:textSize="15sp" />
+
+            <!-- Emergency complications -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="6. Life-Threatening Emergencies"
+                android:textColor="#B71C1C"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Very high blood sugar can sometimes lead to a dangerous emergency, such as diabetic ketoacidosis or a hyperosmolar state. Warning signs may include vomiting, abdominal pain, deep or rapid breathing, severe dehydration, confusion, or extreme drowsiness. These symptoms require urgent medical attention."
+                android:textColor="#536579"
+                android:textSize="15sp" />
+
+            <!-- Warning message -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#FFEBEE"
+                android:padding="14dp"
+                android:lineSpacingExtra="4dp"
+                android:text="IMPORTANT: Diabetes complications are not inevitable. Early diagnosis, prescribed treatment, blood sugar management, and regular medical check-ups can reduce the risk. Seek medical advice promptly if you notice new symptoms or a wound that is not healing."
+                android:textColor="#B71C1C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- Prevention -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="05  |  Prevention &amp; Healthy Living"
+                android:textColor="#1565C0"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Healthy daily habits can help reduce the risk of type 2 diabetes and support overall wellbeing."
+                android:textColor="#536579"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="5dp"
+                android:text="• Eat a balanced diet with vegetables, fruits, whole grains, and lean proteins.&#10;• Exercise regularly and stay physically active.&#10;• Maintain a healthy weight.&#10;• Limit sugary drinks, sweets, and highly processed foods.&#10;• Drink water instead of sugary beverages.&#10;• Avoid smoking.&#10;• Get enough quality sleep.&#10;• Manage stress through relaxation, hobbies, and social activities.&#10;• Attend regular health check-ups and have blood sugar checks when recommended."
+                android:textColor="#37474F"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- Management -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="06  |  Managing Diabetes"
+                android:textColor="#1565C0"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="Effective diabetes management can help control blood sugar levels and reduce the risk of complications."
+                android:textColor="#536579"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="5dp"
+                android:text="• Monitor blood glucose as recommended by your healthcare professional.&#10;• Take prescribed medications or insulin as directed.&#10;• Follow a balanced meal plan.&#10;• Stay physically active.&#10;• Drink enough water.&#10;• Maintain a healthy weight where appropriate.&#10;• Check your feet regularly for cuts, wounds, or infections.&#10;• Attend regular eye examinations and medical appointments.&#10;• Follow your healthcare team's advice and discuss any concerns."
+                android:textColor="#37474F"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- Footer -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="16dp"
+            android:background="#E3F2FD"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Take Charge of Your Health"
+                android:textColor="#174A7E"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Early assessment, regular check-ups, and appropriate treatment can make a difference. Consult a qualified healthcare professional for personalised medical advice."
+                android:textColor="#37474F"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
